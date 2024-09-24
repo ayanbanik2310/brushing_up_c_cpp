@@ -7,7 +7,7 @@
 
 Structure is custom datatype in c programming that allows grouping of different datatypes in single variable.
 
-```
+```cpp
   struct student{
     int id;
     string name;
@@ -22,7 +22,7 @@ A variable X stored at the address 0x001. A pointer p can be assigned the addres
 
 ## How do you declare and initialize a pointer to an integer in C?
 
-```
+```cpp
   int x = 10;
   int *ptr = &x; 
 ```
@@ -30,7 +30,7 @@ A variable X stored at the address 0x001. A pointer p can be assigned the addres
 ## How can you access the members of a structure in C?
 The members of a structure can be accessed using (.) dot operator with the help of structure variable.
 
-```
+```cpp
   struct student{
     int id;
     string name;
@@ -45,7 +45,7 @@ The members of a structure can be accessed using (.) dot operator with the help 
   }
 ```
 ## How can you create a pointer to a structure?
-```
+```cpp
   int main(){
     student stu;
     student *ptr = &stu;
@@ -60,7 +60,7 @@ The members of a structure can be accessed using (.) dot operator with the help 
 ## How do you dynamically allocate memory for a structure using pointers?
 To dynamically allocate memory for a structure, you use the malloc function from the stdlib.h library.
 
-```
+```cpp
   struct student *ptr = (struct student *)malloc(sizeof(struct student));
 ```
 
@@ -69,7 +69,7 @@ We can access structure members using -> from the pointer of a structure.
 
 * pointer -> stucture_member
 
-```
+```cpp
   student stu;
   student *ptr = &stu;
   ptr->id = 1;
